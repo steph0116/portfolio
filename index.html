@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>孙浩泽 (Steph) · 双语出海营销 | 求职作品集</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#3b49df">
+<meta name="description" content="孙浩泽（Steph）——哈尔滨工业大学英语（主修）+财务管理（双学位）在读，雅思7分；美团海外招聘、国际机构运营、医药市场猎头实习经验，目标出海营销 / 市场 / 产品方向。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#faf9f6;
+    --card:#ffffff;
+    --ink:#1c1b1a;
+    --muted:#6f6a63;
+    --line:#ece8e1;
+    --accent:#3b49df;
+    --accent-soft:#eef0ff;
+    --warm:#ff6b4a;
+    --radius:18px;
+    --shadow:0 1px 2px rgba(28,27,26,.04), 0 8px 28px rgba(28,27,26,.06);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;
+    background:var(--bg);color:var(--ink);line-height:1.7;-webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  h1,h2,h3,.serif{font-family:'Fraunces',Georgia,'Songti SC',serif;font-weight:500;letter-spacing:-.01em;line-height:1.15}
+  .muted{color:var(--muted)}
+  .eyebrow{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+  .tag{display:inline-block;font-size:.8rem;font-weight:500;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:999px;padding:.35rem .8rem}
+  .tag.soft{background:var(--accent-soft);border-color:transparent;color:var(--accent)}
+
+  header{position:sticky;top:0;z-index:50;background:rgba(250,249,246,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{font-family:'Fraunces',serif;font-weight:600;font-size:1.05rem;display:flex;align-items:baseline;gap:.5rem}
+  .brand span{font-size:.68rem;font-weight:600;letter-spacing:.16em;color:var(--muted);text-transform:uppercase}
+  .nav-links{display:flex;gap:1.6rem;font-size:.9rem;font-weight:500;color:var(--muted)}
+  .nav-links a:hover{color:var(--ink)}
+  .nav-cta{background:var(--ink);color:#fff;border-radius:999px;padding:.5rem 1.1rem;font-size:.85rem;font-weight:600}
+  .nav-cta:hover{background:var(--accent)}
+  .menu-btn{display:none;background:none;border:none;font-size:1.3rem;cursor:pointer;color:var(--ink)}
+
+  .hero{padding:84px 0 64px}
+  .hero-inner{max-width:820px}
+  .hero h1{font-size:clamp(2.4rem,6vw,3.9rem);margin:14px 0 18px}
+  .hero h1 .accent{color:var(--accent)}
+  .hero .sub{font-size:clamp(1.05rem,2vw,1.25rem);color:var(--muted);max-width:660px}
+  .chips{display:flex;flex-wrap:wrap;gap:.6rem;margin:26px 0 34px}
+  .cta-row{display:flex;flex-wrap:wrap;gap:14px}
+  .btn{display:inline-flex;align-items:center;gap:.5rem;border-radius:999px;padding:.8rem 1.5rem;font-weight:600;font-size:.95rem;cursor:pointer;border:1px solid transparent}
+  .btn-primary{background:var(--accent);color:#fff}
+  .btn-primary:hover{filter:brightness(1.06)}
+  .btn-ghost{background:#fff;border-color:var(--line);color:var(--ink)}
+  .btn-ghost:hover{border-color:var(--ink)}
+
+  section{padding:60px 0;border-top:1px solid var(--line)}
+  .sec-head{max-width:760px;margin-bottom:40px}
+  .sec-head h2{font-size:clamp(1.7rem,3.5vw,2.3rem);margin:12px 0 10px}
+  .sec-head .en{color:var(--muted);font-size:.95rem}
+
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .about-lead{grid-column:1/-1;font-size:1.15rem;max-width:760px}
+  .about-lead em{font-style:normal;color:var(--accent);font-weight:600}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}
+  .card h3{font-size:1.05rem;margin-bottom:6px}
+  .card .k{font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+  .card p{color:var(--muted);font-size:.92rem}
+
+  .roles-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+  .role{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+  .role.hero-role{border-color:var(--accent)}
+  .role.hero-role::before{content:"主推";position:absolute;top:18px;right:-34px;transform:rotate(45deg);background:var(--accent);color:#fff;font-size:.68rem;font-weight:600;padding:.2rem 2.4rem}
+  .role .ico{font-size:1.6rem;margin-bottom:12px}
+  .role h3{font-size:1.15rem;margin-bottom:2px}
+  .role .en{color:var(--accent);font-size:.78rem;font-weight:600;letter-spacing:.04em;margin-bottom:10px}
+  .role p{color:var(--muted);font-size:.92rem;margin-bottom:16px}
+  .role .tags{display:flex;flex-wrap:wrap;gap:.5rem}
+
+  .exp{display:flex;flex-direction:column;gap:20px}
+  .exp-item{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
+  .exp-item.dark{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .exp-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:6px}
+  .exp-head h3{font-size:1.25rem}
+  .exp-role{color:var(--accent);font-weight:600;font-size:.95rem;margin-bottom:14px}
+  .exp-item.dark .exp-role{color:#aab1f5}
+  .exp-date{font-size:.85rem;color:var(--muted);white-space:nowrap}
+  .exp-item.dark .exp-date{color:#9a9caa}
+  .exp-item ul{list-style:none}
+  .exp-item li{position:relative;padding-left:20px;margin-bottom:8px;color:var(--muted);font-size:.93rem}
+  .exp-item.dark li{color:#c9cbd6}
+  .exp-item li::before{content:"·";position:absolute;left:6px;top:-2px;color:var(--accent);font-weight:700}
+  .exp-item.dark li::before{color:#aab1f5}
+
+  .proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:20px}
+  .proj{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}
+  .proj .hd{display:flex;justify-content:space-between;gap:10px;margin-bottom:4px;flex-wrap:wrap}
+  .proj h3{font-size:1.05rem}
+  .proj .date{font-size:.8rem;color:var(--muted);white-space:nowrap}
+  .proj .role{color:var(--accent);font-size:.85rem;font-weight:600;margin-bottom:10px}
+  .proj p{color:var(--muted);font-size:.9rem}
+
+  .skills-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px}
+  .skill h3{font-size:1rem;margin-bottom:12px;display:flex;align-items:center;gap:.5rem}
+  .skill ul{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem}
+  .skill li{background:#fff;border:1px solid var(--line);border-radius:999px;padding:.3rem .75rem;font-size:.82rem;color:var(--ink)}
+  .skill li.hl{background:var(--accent-soft);border-color:transparent;color:var(--accent);font-weight:600}
+
+  .honors{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:var(--shadow)}
+  .honors ul{list-style:none;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:10px}
+  .honors li{position:relative;padding-left:22px;font-size:.93rem;color:var(--muted)}
+  .honors li::before{content:"🏅";position:absolute;left:0;top:0}
+
+  .contact-card{display:grid;grid-template-columns:1fr;gap:16px}
+  .contact-item{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 20px}
+  .contact-item .ico{font-size:1.2rem}
+  .contact-item .k{font-size:.72rem;color:var(--muted)}
+  .contact-item .v{font-weight:600}
+  .contact-item:hover{border-color:var(--accent)}
+
+  footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-size:.85rem}
+
+  .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  @media(max-width:720px){
+    .nav-links{display:none}
+    .nav-links.open{display:flex;flex-direction:column;position:absolute;top:64px;left:0;right:0;background:var(--bg);border-bottom:1px solid var(--line);padding:16px 24px;gap:14px}
+    .menu-btn{display:block}
+    .about-grid{grid-template-columns:1fr}
+    .hero{padding:56px 0 48px}
+    .nav-cta{display:none}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="brand">孙浩泽 <span>Steph</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">关于</a>
+      <a href="#roles">求职方向</a>
+      <a href="#experience">实习经历</a>
+      <a href="#projects">校园/项目</a>
+      <a href="#skills">技能</a>
+      <a href="#contact">联系</a>
+    </nav>
+    <a href="#contact" class="nav-cta">联系我</a>
+    <button class="menu-btn" id="menuBtn" aria-label="菜单">☰</button>
+  </div>
+</header>
+
+<!-- Hero -->
+<div class="hero">
+  <div class="wrap hero-inner">
+    <span class="eyebrow">Steph · Bilingual Global Marketing</span>
+    <h1>双语驱动的<br><span class="accent">出海营销</span>人</h1>
+    <p class="sub">哈尔滨工业大学英语（主修）+ 财务管理（双学位）在读，雅思 7 分；有美团 Keeta（中东开国）、国际组织实习与医药市场猎头（MKT）实习经验，目标 Go-to-Market / 市场 / 产品方向。</p>
+    <div class="chips">
+      <span class="tag soft">Go-to-Market（GTM）</span>
+      <span class="tag soft">出海营销</span>
+      <span class="tag soft">双语（中英）</span>
+      <span class="tag soft">市场营销</span>
+      <span class="tag">产品经理</span>
+    </div>
+    <div class="cta-row">
+      <a href="#experience" class="btn btn-primary">查看经历 →</a>
+      <a href="#contact" class="btn btn-ghost">联系我</a>
+      <!-- TODO: 有简历 PDF 后，把下面按钮的 href 换成简历链接 -->
+      <a href="#" class="btn btn-ghost">下载简历 ↓</a>
+    </div>
+  </div>
+</div>
+
+<!-- About -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">About · 关于我</span>
+      <h2>英语专业出身，有真实海外市场经验的双语人才</h2>
+      <p class="en">Bilingual · Global-facing · Data-literate</p>
+    </div>
+    <div class="about-grid">
+      <p class="about-lead reveal">我是孙浩泽（Steph），英语是我的核心长板，<em>海外市场与出海</em>是我的经历主线。在大厂（美团）、国际机构与外资猎头做过真实的海外招聘与市场工作，目标<em>出海营销 / 市场营销 / 产品</em>方向。</p>
+
+      <div class="card reveal">
+        <div class="k">Education · 教育背景</div>
+        <h3>哈尔滨工业大学 · 本科在读</h3>
+        <p>主修：英语　双学位：财务管理</p>
+        <p style="margin-top:8px">2023.09 – 2027.06</p>
+      </div>
+
+      <div class="card reveal">
+        <div class="k">Language · 语言能力</div>
+        <h3>雅思 7 分（6.5）· 专四</h3>
+        <p>国才考试中级、CET-4 / CET-6，扎实的英语听说读写与跨文化沟通能力。</p>
+      </div>
+
+      <div class="card reveal">
+        <div class="k">Positioning · 定位</div>
+        <h3>双语 / 出海营销</h3>
+        <p>中英双语内容与沟通、跨文化协作，面向制造业、外企与大厂的海外市场。</p>
+      </div>
+
+      <div class="card reveal">
+        <div class="k">Focus · 目标领域</div>
+        <h3>GTM · 出海 · 大厂 · 外企</h3>
+        <p>Go-to-Market、出海营销、市场营销、产品营销（PMM）与产品经理方向，偏好制造业 / 外企 / 大厂。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Roles -->
+<section id="roles">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Target Roles · 求职方向</span>
+      <h2>我找这些方向的实习</h2>
+      <p class="en">Global marketing · Marketing · PMM · Product</p>
+    </div>
+    <div class="roles-grid">
+      <div class="role hero-role reveal">
+        <div class="ico">🚀</div>
+        <h3>Go-to-Market（GTM）</h3>
+        <div class="en">Go-to-Market</div>
+        <p>面向新市场 / 新产品的上市策略：市场进入、渠道与本地化、从 0 到 1 的落地。</p>
+        <div class="tags"><span class="tag">市场进入</span><span class="tag">上市策略</span><span class="tag">本地化</span></div>
+      </div>
+
+      <div class="role reveal">
+        <div class="ico">🌏</div>
+        <h3>出海营销 / 海外市场</h3>
+        <div class="en">Global Marketing</div>
+        <p>面向制造业、外企与大厂的海外市场：双语内容、跨文化沟通、市场开拓与本地化。</p>
+        <div class="tags"><span class="tag">双语内容</span><span class="tag">跨文化沟通</span><span class="tag">本地化</span></div>
+      </div>
+
+      <div class="role reveal">
+        <div class="ico">📣</div>
+        <h3>市场营销</h3>
+        <div class="en">Marketing</div>
+        <p>品牌营销、整合营销与 campaign，用真实的市场与招聘经验理解人才与市场两端。</p>
+        <div class="tags"><span class="tag">品牌营销</span><span class="tag">整合营销</span><span class="tag">Campaign</span></div>
+      </div>
+
+      <div class="role reveal">
+        <div class="ico">🔍</div>
+        <h3>消费者洞察 / 市场研究</h3>
+        <div class="en">Consumer Insights</div>
+        <p>有行业动态、数据分析与报告撰写的底子，擅长把数据整理成可落地的洞察。</p>
+        <div class="tags"><span class="tag">数据分析</span><span class="tag">行业研究</span><span class="tag">报告撰写</span></div>
+      </div>
+
+      <div class="role reveal">
+        <div class="ico">🧲</div>
+        <h3>产品营销（PMM）</h3>
+        <div class="en">Product Marketing</div>
+        <p>连接产品与市场：定位、卖点提炼、GTM，让产品被对的人看见并选择。</p>
+        <div class="tags"><span class="tag">产品定位</span><span class="tag">GTM</span><span class="tag">卖点提炼</span></div>
+      </div>
+
+      <div class="role reveal">
+        <div class="ico">🧭</div>
+        <h3>产品经理（大厂）</h3>
+        <div class="en">Product Manager</div>
+        <p>理解产品经理岗位需求，用户需求、产品方案与数据驱动的产品思维。</p>
+        <div class="tags"><span class="tag">用户需求</span><span class="tag">产品方案</span><span class="tag">数据驱动</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Experience · 实习经历</span>
+      <h2>真实海外市场与招聘经验</h2>
+      <p class="en">Global-facing internships</p>
+    </div>
+    <div class="exp">
+
+      <div class="exp-item dark reveal">
+        <div class="exp-head">
+          <h3>美团 Keeta · 海外招聘实习生</h3>
+          <span class="exp-date">2026.07 – 2026.09</span>
+        </div>
+        <div class="exp-role">大厂 · 出海 · 中东开国攻坚</div>
+        <ul>
+          <li>参与美团 Keeta 海外市场「开国攻坚」，聚焦中东地区，支撑当地新市场从 0 到 1 落地。</li>
+          <li>负责管理岗人才招聘，全程英文对接外籍候选人，独立完成寻访、简历筛选、全英文面试、薪资谈判与 offer 发放全流程。</li>
+          <li>达成 KPI：每日 7 份优质候选人推荐、5 场面试邀约，每周 4 份管理岗正式 offer，持续为海外市场开拓输送人才。</li>
+        </ul>
+      </div>
+
+      <div class="exp-item reveal">
+        <div class="exp-head">
+          <h3>HRnetGroup（新加坡猎头）· 医药市场猎头</h3>
+          <span class="exp-date">2026.01 – 2026.03</span>
+        </div>
+        <div class="exp-role">外企 · 市场方向（MKT）</div>
+        <ul>
+          <li>与国内外知名药企合作，完成医药市场人才 mapping，掌握行业动态、企业结构与人才偏好。</li>
+          <li>负责产品经理、高级产品经理、市场经理岗位招聘，日均简历初筛 50+，日均电话沟通 20+，累计推荐 20+ 人。</li>
+        </ul>
+      </div>
+
+      <div class="exp-item reveal">
+        <div class="exp-head">
+          <h3>ICENECDEV · 国际实习生</h3>
+          <span class="exp-date">2024.01 – 2024.04</span>
+        </div>
+        <div class="exp-role">国际组织 · 环保项目</div>
+        <ul>
+          <li>与机构负责人及跨国团队远程协作，每周承接并完成环保项目的分派任务。</li>
+          <li>收集欧洲 20 国银行的具体信息，与相应银行沟通并保持联系，推进数据字段标准化与合规审查，完成数据库更新。</li>
+          <li>参与组织环保宣传与募捐活动，与团队落地「海洋英雄奖」等环保奖项线上募捐，累计筹集 6000+ 美元。</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Campus & Projects · 校园与项目</span>
+      <h2>校园经历与项目</h2>
+    </div>
+    <div class="proj-grid">
+
+      <div class="proj reveal">
+        <div class="hd"><h3>校博物馆讲解团</h3><span class="date">2023.09 – 2024.06</span></div>
+        <div class="role">部长</div>
+        <p>运营社团公众号，持续输出校史、杰出校友专题；统筹参观预约与讲解分配，全年完成 100+ 场大型团体接待。策划百团大战等宣传，自主设计物料，对接企业争取万元级赞助。</p>
+      </div>
+
+      <div class="proj reveal">
+        <div class="hd"><h3>校电视台</h3><span class="date">2023.09 – 2024.01</span></div>
+        <div class="role">策划与运营</div>
+        <p>统筹视频号、公众号等新媒体矩阵，独立完成 12 期选题策划、脚本撰写与拍摄；视频号平均播放量提升 40%，公众号单篇最高阅读破万，满意度调研稳定 80%。</p>
+      </div>
+
+      <div class="proj reveal">
+        <div class="hd"><h3>大一年度项目</h3><span class="date">2023.09 – 2024.12</span></div>
+        <div class="role">核心成员</div>
+        <p>分析 50+ 文献与政策文件，搭建教材–政策协同机制框架；独立撰写万字研究报告，结论被学院采纳，用作课程建设与教材遴选参考。</p>
+      </div>
+
+      <div class="proj reveal">
+        <div class="hd"><h3>校长杯创新创业大赛</h3><span class="date">2023.09 – 2024.10</span></div>
+        <div class="role">负责人</div>
+        <p>收集课程体系、教学方法与学生反馈数据，分析英语专业建设与高等教育国际化适配性，提出可落地的专业优化策略，获哈工大语言文学学院一等奖。</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Skills & Honors -->
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Skills & Honors · 技能与荣誉</span>
+      <h2>我的能力</h2>
+    </div>
+    <div class="skills-grid" style="margin-bottom:20px">
+      <div class="skill reveal">
+        <h3>🌐 语言</h3>
+        <ul><li>雅思 7（6.5）</li><li>专业四级</li><li>国才中级</li><li>CET-4 / CET-6</li></ul>
+      </div>
+      <div class="skill reveal">
+        <h3>🌍 海外平台 · 办公协作</h3>
+        <ul><li>领英</li><li>WhatsApp</li><li>Instagram</li><li>X（Twitter）</li><li>YouTube</li><li>Slack</li><li>Zoom</li></ul>
+      </div>
+      <div class="skill reveal">
+        <h3>🤖 工具 · AI</h3>
+        <ul><li class="hl">善于使用 AI</li><li>Codex</li><li>Cloud Code</li><li>GitHub</li><li>Excel</li><li>Word</li></ul>
+      </div>
+      <div class="skill reveal">
+        <h3>📊 分析</h3>
+        <ul><li>数据收集整理</li><li>数据分析</li><li>报告撰写</li></ul>
+      </div>
+    </div>
+
+    <div class="honors reveal">
+      <h3 style="margin-bottom:14px">🏆 所获荣誉</h3>
+      <ul>
+        <li>哈工大优秀学生</li>
+        <li>哈工大第十三、十四届学生代表大会代表</li>
+        <li>入党积极分子培训班优秀学员</li>
+        <li>外研社·国才杯英语阅读大赛校级三等奖</li>
+        <li>连续两次获哈工大语言学院学生会优秀部员</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Contact · 联系我</span>
+      <h2>期待与你聊聊</h2>
+      <p class="en">Open to marketing & product internships</p>
+    </div>
+    <div class="contact-card reveal">
+      <div class="contact-item">
+        <span class="ico">✉️</span>
+        <div><div class="k">邮箱</div><div class="v">sunzhixin3456@126.com</div></div>
+      </div>
+      <div class="contact-item">
+        <span class="ico">📱</span>
+        <div><div class="k">电话</div><div class="v">18745694760</div></div>
+      </div>
+      <!-- TODO: 有领英/主页链接的话，替换下面占位符 -->
+      <div class="contact-item">
+        <span class="ico">🔗</span>
+        <div><div class="k">领英 / 主页</div><div class="v">[你的领英或主页链接]</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
+    <span>© 2026 孙浩泽 (Steph)</span>
+    <span>双语驱动的出海营销人 · Bilingual global marketing</span>
+  </div>
+</footer>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const navLinks = document.getElementById('navLinks');
+  menuBtn.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  // 离线缓存（部署到 HTTPS 后生效）
+  if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+    navigator.serviceWorker.register('./sw.js');
+  }
+</script>
+</body>
+</html>

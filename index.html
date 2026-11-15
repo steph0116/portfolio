@@ -11,8 +11,76 @@
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body class="mode-clean no-transition">
-  <canvas id="leaf-canvas" class="leaf-canvas" aria-hidden="true"></canvas>
   <div class="grain" aria-hidden="true"></div>
+
+  <div class="pool-experience" id="pool-experience" aria-hidden="true">
+    <canvas id="pool-canvas"></canvas>
+    <div class="pool-loading" id="pool-loading" aria-hidden="true">
+      <span>STEPH / UNDERWATER INDEX</span>
+      <b>SUBMERGING</b>
+      <i><em></em></i>
+    </div>
+    <div class="pool-vignette" aria-hidden="true"></div>
+    <div class="pool-ui">
+      <header class="pool-hud">
+        <button class="pool-mark" type="button" data-pool-home aria-label="回到泳池全景">
+          <span>SH</span>
+          <span><b>STEPH</b><small>UNDERWATER INDEX</small></span>
+        </button>
+        <div class="pool-modes" role="group" aria-label="切换网站版本">
+          <button type="button" data-mode="clean" aria-pressed="false">01 / 简洁</button>
+          <button type="button" data-mode="immersive" class="active" aria-pressed="true">02 / 沉浸</button>
+        </div>
+      </header>
+      <div class="pool-top" id="pool-intro">
+        <span class="pool-kicker">AN INTERACTIVE PORTFOLIO / BLUE HOUR</span>
+        <h2 class="pool-heading"><span>STEP INTO</span>THE <em>DEEP.</em></h2>
+        <p class="pool-sub">拖动旋转视角，滚轮靠近水面。选一件作品登船，下一站沿泳池继续航行。</p>
+      </div>
+      <div class="pool-voyage" id="pool-voyage" role="status" aria-live="polite">
+        <span><i></i> NOW SAILING</span>
+        <b>前往 <em id="pool-voyage-title">下一站</em></b>
+        <small id="pool-voyage-meta">FOLLOW THE BLUE LANE</small>
+      </div>
+      <div class="pool-labels" id="pool-labels">
+        <button type="button" data-project="habit"><span>01</span><b>Habit Loop</b><small>PRODUCT / 0→1</small></button>
+        <button type="button" data-project="ads"><span>02</span><b>Google Ads</b><small>GROWTH / TEST</small></button>
+        <button type="button" data-project="zhong"><span>03</span><b>钟薛高</b><small>BRAND / INSIGHT</small></button>
+        <button type="button" data-project="resume"><span>CV</span><b>简历</b><small>PROFILE / PDF</small></button>
+      </div>
+      <div class="pool-controls">
+        <div class="pool-depth">
+          <span>DEPTH</span>
+          <b id="pool-depth">01.8</b>
+          <small>METERS</small>
+        </div>
+        <div class="pool-gesture">
+          <i></i>
+          <span>DRAG TO ORBIT<br>SCROLL TO APPROACH</span>
+        </div>
+        <button class="pool-ambient" id="pool-ambient" type="button" aria-pressed="false">
+          <i></i><span>AMBIENT</span>
+        </button>
+      </div>
+      <nav class="pool-dock" aria-label="作品索引">
+        <button type="button" data-project="habit"><span>01</span>HABIT</button>
+        <button type="button" data-project="ads"><span>02</span>ADS</button>
+        <button type="button" data-project="zhong"><span>03</span>ZHONG</button>
+        <button type="button" data-project="resume"><span>CV</span>PROFILE</button>
+      </nav>
+      <div class="pool-footer">
+        <span>POOL / 2026 · SUN HAOZE</span>
+        <span>BILINGUAL MARKETER · PRODUCT BUILDER</span>
+      </div>
+    </div>
+    <aside class="pool-panel" id="pool-panel" aria-hidden="true">
+      <div class="pool-panel-rail">
+        <span id="pool-panel-index">DIVE 01</span>
+        <button class="pool-close" id="pool-close" type="button" aria-label="浮回水面">浮回水面 <span>×</span></button>
+      </div>
+      <div class="pool-panel-body" id="pool-panel-body"></div>
+    </aside>
+  </div>
 
   <header class="site-header">
     <div class="wrap nav">
@@ -314,6 +382,7 @@
   </footer>
 
   <div class="mode-toast" id="mode-toast" role="status"></div>
+  <script src="./assets/three.min.js"></script>
   <script src="./app.js"></script>
 </body>
 </html>

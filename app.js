@@ -67,7 +67,7 @@
       meta: "中文营销 · 中文产品 · English CV",
       body: "英语出身，转向市场营销与产品。做过中东市场招聘、国际组织传播、药企 Marketing 招聘；现在用 Habit Loop 和 Google Ads 测试补产品与增长经验。",
       summaryStats: [
-        ["20+", "OFFERS", "中东市场招聘"],
+        ["7.0", "IELTS", "英语能力"],
         ["50/日", "SCREEN", "药企 MKT 招聘"],
         ["6000+", "USD", "国际组织募捐"]
       ],

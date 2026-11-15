@@ -1,4 +1,4 @@
-const CACHE = 'sun-haoze-portfolio-v7';
+const CACHE = 'sun-haoze-portfolio-v8';
 const ASSETS = ['./', './index.html', './styles.css', './app.js', './icon.svg', './manifest.webmanifest', './assets/three.min.js'];
 
 self.addEventListener('install', (e) => {

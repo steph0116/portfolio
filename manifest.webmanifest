@@ -1,12 +1,12 @@
 {
-  "name": "孙浩泽 (Steph) · 双语出海营销",
+  "name": "孙浩泽 (Steph) · 市场营销 × 产品作品集",
   "short_name": "孙浩泽",
-  "description": "孙浩泽（Steph）求职作品集：哈工大英语+财务管理在读，出海营销 / 市场 / 产品方向。",
+  "description": "孙浩泽（Steph）的个人作品集：Habit Loop、Google Ads 海外投放测试、钟薛高品牌重启研究。",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "background_color": "#faf9f6",
-  "theme_color": "#3b49df",
+  "background_color": "#07130f",
+  "theme_color": "#07130f",
   "icons": [
     { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
   ]

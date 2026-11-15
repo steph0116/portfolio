@@ -1,5 +1,5 @@
-const CACHE = 'sun-haoze-portfolio-v1';
-const ASSETS = ['./', './index.html', './icon.svg', './manifest.webmanifest'];
+const CACHE = 'sun-haoze-portfolio-v2';
+const ASSETS = ['./', './index.html', './styles.css', './app.js', './icon.svg', './manifest.webmanifest'];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(
